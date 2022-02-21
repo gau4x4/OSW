@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	moz-box-sizing:border-box;
+	webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	webkit-font-smoothing:antialiased;
+}
+
+
+.riga{
+float:left;
+clear:both;	
+width:100%;
+}
+
+
+.contenitore{
+max-width:1280px;
+margin:0 auto;
+
+}
+
+.contenitore .col{
+	float:left;
+	text-align:center;
+	color:#fff;
+}
+
+.clearfix:after,
+.contenitore:after {
+	content: "";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.clearfix,
+.contenitore {
+	zoom: 1;
+}
+
+
+.colonna{
+	float:left;
+	padding:20px;
+}
+
+.col1{
+	width:100%;
+}
+
+.col2{
+	width:50%;
+}
+
+.col3{
+	width:33.333%;
+	
+}
+
+.col4{
+	width:25%;
+	
+}
+
+
+@media only screen and (max-width : 767px) {
+    .colonna{
+        float:none;
+        width: 100%;
+    }  
+}

@@ -1,0 +1,79 @@
+/* dispositivi mobili */
+
+@media screen and (max-width:768px) {
+
+
+.nav-logo{
+	float:left;
+	padding:25px 10px;
+	text-decoration:none;
+	outline:none;
+	color:#F43752;
+	font-size:1em
+}
+
+
+	.nav-menu{
+		float: right;
+		display: block;
+		padding: 20px 10px;
+		cursor: pointer
+	}
+	
+	.nav-lista{
+		height: 0;
+		float: left;
+		overflow: hidden;
+		width: 100%
+	}
+	
+	.nav-lista li{
+		width: 100%
+	}
+	
+	.brand-heading {
+  color:#FFFFFF;
+  font-size:1.8em;
+  font-weight:600;
+  text-align:center;
+  line-height:1.5
+}
+
+.title-heading {
+
+  font-size:2em;
+}
+
+
+#intro{
+	background-color: rgba(42, 46, 62, 1);
+	background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50% !important;
+	height:auto;
+	margin:0 auto;
+}
+
+
+.work-text {
+  font-size:1.2em;
+  text-align:justify;
+  font-weight:100;
+  color:#a7a0a2;
+  padding:1em
+}
+
+
+.title-heading {
+	font-family: 'Nixie One', cursive;
+  color:#FFFFFF;
+  font-size:1.8em;
+  font-weight:600;
+  text-align:center;
+  line-height:1.5
+}
+
+
+}

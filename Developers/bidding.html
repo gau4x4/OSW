@@ -1,0 +1,1168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ore Software</title>
+
+<%@ page import="java.sql.*" %> 
+<%@ page import="java.io.IOException"%>
+<meta name="language" content="en">
+<meta name="author" content="osw">
+<link rel="stylesheet" type="text/css" href="css/Form-1.css" />
+<script src="js/modernizr.custom.63321.js"></script>        
+<meta name="classification" content="freelance, web, social network"> 
+<meta name="robots" content="index follow">
+<meta name="revisit-after" content="15 days">
+<link href="data/style.css" rel="stylesheet" type="text/css">
+<link href="data/reset.css" rel="stylesheet" type="text/css">
+<link href="data/mediaquery.css" rel="stylesheet" type="text/css">
+<link href="data/griglie.css" rel="stylesheet" type="text/css">
+<link href="data/css.css" rel="stylesheet" type="text/css">
+<link href="data/css_002.css" rel="stylesheet" type="text/css">
+<script src="http://cdn.iubenda.com/iubenda.js"></script>
+<script src="data/analytics.js" async=""></script>
+<script type="text/javascript" src="data/jquery_002.js"></script>
+<!-- menu --><script type="text/javascript" src="data/javascript.js"></script>
+<script src="data/modernizr.custom.63321.js"></script>
+<script src="data/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="data/jquery-1_002.js"></script>
+<script type="text/javascript" src="data/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#profile_e").click(function(){
+ $("#contentprofile_e").slideDown(2000)
+ $("#close_ID").click(function(){
+ $("#contentprofile_e").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#newproject").click(function(){
+ $("#contentnewproject").slideDown(2000)
+ $("#close_ID1").click(function(){
+ $("#contentnewproject").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#projectcmp").click(function(){
+ $("#contentprojectcmp").slideDown(2000)
+ $("#close_ID2").click(function(){
+ $("#contentprojectcmp").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#projectundwork").click(function(){
+ $("#contentprojectundwork").slideDown(1000)
+ $("#close_ID3").click(function(){
+ $("#contentprojectundwork").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#projectbidst").click(function(){
+ $("#contentprojectbidst").slideDown(1000)
+ $("#close_ID4").click(function(){
+ $("#contentprojectbidst").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#bidproject").click(function(){
+ $("#contentbidproject").slideDown(1000)
+ $("#close_ID5").click(function(){
+ $("#contentbidproject").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#topdev").click(function(){
+ $("#contenttopdev").slideDown(1000)
+ $("#close_ID6").click(function(){
+ $("#contenttopdev").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#learning_c").click(function(){
+ $("#contentlearning").slideDown(1000)
+ $("#close_ID7").click(function(){
+ $("#contentlearning").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#help_c").click(function(){
+ $("#contenthelp").slideDown(1000)
+ $("#close_ID8").click(function(){
+ $("#contenthelp").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#forum_c").click(function(){
+ $("#contentforum").slideDown(1000)
+ $("#close_ID9").click(function(){
+ $("#contentforum").slideUp(2000);
+ });
+ });
+});
+$(document).ready(function(){
+ $("#account").click(function(){
+ $("#accountinfo").toggle(1000)});
+});
+$(document).ready(function(){
+	$("#gaurav").hover(function(){
+		$("#gaurav_pic").fadeIn(2000);
+		$("#vijit_pic").fadeIn(2000);
+		$("#jyoti_pic").fadeIn(2000);
+	});
+});
+
+  $(document).ready(function() {
+        $('ul li:last').css('margin-right', '0');
+				$("ul").corner('bottom', '18px');
+				$('ul li a').click(function (){
+						$('.current').removeClass('current');
+						$(this).addClass('current');
+				});
+				
+				
+			$('a[href*=#]').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+					&& location.hostname == this.hostname) {
+							var $target = $(this.hash);
+							$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+							if ($target.length) {
+									var targetOffset = $target.offset().top;
+									$('html,body').animate({scrollTop: targetOffset}, 1000);
+									return false;
+							}
+					}
+			});
+
+    });
+</script>
+
+
+<!--fancyapps-->
+<link rel="stylesheet" href="data/jquery.css" type="text/css" media="screen">
+<script type="text/javascript" src="data/jquery-1.js"></script>
+<script type="text/javascript" src="data/jquery_003.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+	$j(document).ready(function() {
+		$j(".fancybox").fancybox();
+	});
+</script>
+
+<style type="text/css">
+    .fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+		
+</style>
+<!--fine fancyapps-->
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+<style class="firebugResetStyles" type="text/css" charset="utf-8">
+#accountinfo{
+display:none;
+height:auto;
+width:110px;
+background-color:#fFF;
+border:#00cc99 2 px solid;
+margin-left:850px;
+list-style:none;
+color:#000;
+padding:5px;
+text-align:center;
+font-family:'Bamf','nixie one',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+
+}
+#accountinfo ul li{
+padding:5px;
+background-color:#00cc99;
+font-family:'Bamf','nixie one',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#purpose_ctnt{
+    background:#003333;
+	height:auto;
+	padding: 0;
+	color:#fff;
+	font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentprofile_e{
+height:auto;
+width:100%;
+background:#00cc99;
+display:none;
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+font-size:2em;
+
+}#contentprofile_e p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+
+#contentprofile_e img{
+cursor:default;
+padding:10px 10px 10px 10px;
+float:right;
+
+}
+#contentnewproject{
+height:auto;
+width:100%;
+background:#00cc99;
+display:none;
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+font-size:2em;
+
+}#contentnewproject p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+
+#contentnewproject img{
+cursor:default;
+padding:10px 10px 10px 10px;
+float:right;
+
+}
+#contentprojectcmp{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contentprojectcmp p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentprojectcmp img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contentprojectundwork{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contentprojectundwork p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentprojectundwork img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contentprojectbidst{
+height:auto;
+width:100%;
+background-color:#00cc99;
+display:none;
+font-size:2em;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentprojectbidst p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentprojectbidst img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contentbidproject{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contentbidproject p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentbidproject img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contenttopdev{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contenttopdev p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contenttopdev img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contentlearning{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contentlearning p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentlearning img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contenthelp{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contenthelp p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contenthelp img{
+cursor:default;
+padding:10px;
+float:right;
+}
+#contentforum{
+height:auto;
+width:100%;
+font-family:'Nixie One',Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+background-color:#00cc99;
+display:none;
+font-size:2em;
+}
+#contentforum p{
+font-family:Entebbe,'Abierta','Arriaga',cursive,Ephesian,'Ephesian 3D';
+}
+#contentforum img{
+cursor:default;
+padding:10px;
+float:right;
+}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
+	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
+	background-color:#007dc1;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
+	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:-ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
+	background-color:#0061a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+table{
+background:#00cc99;
+border:1px #3b5998 solid;
+font-family:'Orator Std';
+padding:5px;
+color:#000;
+
+}
+tr,td,th{
+border:1px #3b5998 solid;
+font-family:'Orator Std';
+text-align:center;
+font-size:15px;
+width:auto;
+padding:5px;
+
+}
+
+</style></head>
+
+<body>
+<%
+try{
+String Ch_name=(String)session.getAttribute("name");
+if(Ch_name.equalsIgnoreCase("null")||Ch_name.equalsIgnoreCase(""))
+response.sendRedirect("index.jsp?msgstring=1");	
+}
+catch(Exception e){
+response.sendRedirect("../index.jsp?msgstring="+e);}
+%>
+
+<nav class="nav-bar">
+
+	<nav class="nav-bar">
+    <div class="nav-contenuto"> <a href="#intro"><h3 class="nav-logo"><span style="color:#FFF">ORE SOFTWARE </span>[ DEVELOPERS ]</h3></a>
+        <a id="nav-menu" class="nav-menu">☰</a>
+        <ul style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" class="nav-lista" id="nav">
+        	
+            <li><a>WELCOME[  <%=session.getAttribute("name")%> ]</a></li>
+            <li id="account"><a >ACCOUNT</a></li>
+            <li><a href="#work">PURPOSE</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li style="margin-right: 0px;"><a href="#contact">CONTACT US</a></li>
+						
+           </ul> 
+          	
+	</div>
+    <div id="accountinfo">
+     <ul>
+	 <li><a href="../">SETTING</a></li>
+	 <li><a href="../">PRIVACY POLICY</a></li>
+	 <li><a href="../logout.jsp?msgstring=3">LOGOUT</a></li>
+	 </ul>
+	</div>	
+	</nav>
+
+
+</nav>
+
+<section id="intro"><div class="contenitore">
+
+<div class="riga" style="padding:8em 0">
+	 
+        <div class="colonna col1">
+        
+      <h1 class="brand-heading">Designers love subtle cues, <br> because subtlety is one of the traits of sophisticated design.<br> <span style="color:#F43752; font-weight:light"> But Web users are </span>generally in such a hurry that they routinely miss subtle cues.”  <br><span class="attribution">― Steve Krug, Don't Make Me Think: A Common Sense Approach to Web Usability -<br></span></h1>
+        <p class="intro-text">Freelance designer specializing in graphic , web and social networks .</p>
+
+        
+        <div class="page-scroll">
+        <a href="#work" class="button">WATCH THE WORKS</a>
+        </div>
+		</div>
+
+
+
+</div>
+
+
+</div></section>
+
+
+<section id="work">
+<div class="contenitore">
+<%
+Connection con= null;
+PreparedStatement ps = null;
+PreparedStatement ps1 = null;
+PreparedStatement ps2 = null;
+PreparedStatement ps3 = null;
+PreparedStatement ps4 = null;
+PreparedStatement ps5 = null;
+PreparedStatement ps6 = null;
+ResultSet rs = null;
+ResultSet rs1 = null;
+ResultSet rs2 = null;
+ResultSet rs3 = null;
+ResultSet rs4 = null;
+ResultSet rs5 = null;
+ResultSet rs6 = null;
+String user_email=(String)session.getAttribute("username");
+String D_uidn="5";
+String sql="select * from members where username=?";
+String sql1="select * from projects_detail where dop>='2015-04-11 01:40:50'";
+String sql2="select * from project_completed where uidn=?";
+String sql3="select  * from pro_under_work where uidn=? ";
+String sql4="select  * from projects_bid_status where uidn=? ";
+String sql5="select  * from developers where ranking<'11' LIMIT 10";
+String sql6="select  * from developers where username=?";
+
+	try{
+        		
+		Class.forName("com.mysql.jdbc.Driver");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/osw","root","");
+		Statement stmt = con.createStatement();
+		ps = con.prepareStatement(sql);
+		ps1 = con.prepareStatement(sql1);
+		ps2 = con.prepareStatement(sql2);
+		ps3 = con.prepareStatement(sql3);
+		ps4 = con.prepareStatement(sql4);
+		ps5 = con.prepareStatement(sql5);
+		ps.setString(1,user_email );
+		ps2.setString(1,D_uidn );
+		ps3.setString(1,D_uidn);
+		ps4.setString(1,D_uidn );
+		
+        rs=ps.executeQuery();		
+        rs1=ps1.executeQuery();		
+        rs2=ps2.executeQuery();		
+        rs3=ps3.executeQuery();		
+        rs4=ps4.executeQuery();		
+        rs5=ps5.executeQuery();		
+        	
+		 
+		   
+        %>	
+<div class="riga">
+<div class="colonna col1">
+<section id="purpose_ctnt">
+<div id='purposext'>
+<ul>
+   <li class='active'><a id="profile_e"><span>PROFILE</span></a></li>
+   <li class='active'><a id="newproject"><span>NEW PROJECTS</span></a></li>
+   <li ><a id="projectcmp"><span>PROJECT COMPLETED</span></a></li>
+   <li ><a id="projectundwork"><span>PROJECT UNDER WORK</span></a></li>
+   <li ><a id="projectbidst"><span>BID STATUS</span></a></li>
+   <li ><a id="bidproject"><span>BID PROJECT</span></a></li>
+   <li ><a id="topdev"><span>TOP DEVELOPERS</span></a></li>
+   <li ><a id="learning_c"><span>LEARNING</span></a></li>
+   <li ><a id="help_c"><span>HELP</span></a></li>
+   <li class='last'><a id="forum_c"><span>FORUM</span></a></li>
+</ul>
+</div>
+<div class="contenitore">
+<div id="contentprofile_e">
+<p ><a href="post.jsp">[ PROFILE ]</a><img src="data/close_client.png" alt="key" id="close_ID"></p>
+<table>
+<%
+  while(rs.next()){
+			String dev_name1 = rs.getString("name[first]");
+			String dev_name2 = rs.getString("name[last]");
+			String dev_username1 = rs.getString("username");
+			String dev_ut1 = rs.getString("usertype");
+			String dev_phone1 = rs.getString("phone");
+			String dev_dob1 = rs.getString("dob");
+			String dev_doj1 = rs.getString("doj");
+			%>
+<tr><th>NAME[FIRST]<%out.println("<td>"+dev_name1+"</td>");%></th></tr>
+<tr><th>NAME[LAST]<%out.println("<td>"+dev_name2+"</td>");%></th></tr>
+<tr><th>USERNAME<%out.println("<td>"+dev_username1+"</td>");%></th></tr>
+<tr><th>USERTYPE<%out.println("<td>"+dev_ut1+"</td>");%></th></tr>
+<tr><th>CONTACT<%out.println("<td>"+dev_phone1+"</td>");%></th></tr>
+<tr><th>DOB<%out.println("<td>"+dev_dob1+"</td>");%></th></tr>
+<tr><th>DOJ<%out.println("<td>"+dev_doj1+"</td>");%></th></tr>
+<tr><th>RANK<%}%></th></tr>
+<tr><th>AVERAGE BID COST<%%></th></tr>
+<tr><th>AVERAGE BID COST<%%></th></tr>
+<tr><th>AVERAGE BID COST<%%></th></tr>
+
+</table>
+</div>
+<div id="contentnewproject">
+<p ><a href="post.jsp">[ NEW PROJECTS ]</a><img src="data/close_client.png" alt="key" id="close_ID1"></p>
+<table>
+<th>ID</th>
+<th>TITLE</th>
+<th>LANGUAGE</th>
+<th>FRAMEWORK</th>
+<th>(COST&#8377)</th>
+<th>DURATION(month)</th>
+<th>TYPE</th>
+<th>DESCRIPTION</th>
+<th>ADDITIONAL</th>
+<th>EMAIL</th>
+<th>DOP</th>
+<%
+  while(rs1.next()){
+			String pro_pid7 = rs1.getString("pid");
+			String pro_title7 = rs1.getString("projecttitle");
+			String pro_language7 = rs1.getString("language");
+			String pro_frame7 = rs1.getString("framework");
+			String pro_cost7 = rs1.getString("cost");
+			String pro_duration7 = rs1.getString("duration");
+			String pro_type7 = rs1.getString("type");
+			String pro_desc7 = rs1.getString("descr");
+			String pro_adddet7 = rs1.getString("adddet");
+			String pro_email7 = rs1.getString("email");
+			String pro_dop7 = rs1.getString("dop");
+		
+
+out.println("<tr>");
+out.println("<td>"+pro_pid7+"</td>");
+out.println("<td>"+pro_title7+"</td>");
+out.println("<td>"+pro_language7+"</td>");
+out.println("<td>"+pro_frame7+"</td>");
+out.println("<td>"+pro_cost7+"</td>");
+out.println("<td>"+pro_duration7+"</td>");
+out.println("<td>"+pro_type7+"</td>");
+out.println("<td>"+pro_desc7+"</td>");
+out.println("<td>"+pro_adddet7+"</td>");
+out.println("<td>"+pro_email7+"</td>");
+out.println("<td>"+pro_dop7+"</td>");
+out.println("</tr>");
+%>	
+</table>
+</div>
+<div id="contentbidproject">
+<p >[ BID PROJECT ]<img src="data/close_client.png" alt="key" id="close_ID5"/></p>
+<table>
+<th>ID</th>
+<th>TITLE</th>
+<th>LANGUAGE</th>
+<th>FRAMEWORK</th>
+<th>(COST&#8377)</th>
+<th>DURATION(month)</th>
+<th>TYPE</th>
+<th>DESCRIPTION</th>
+<th>ADDITIONAL</th>
+<th>EMAIL</th>
+<th>DOP</th>
+<th>PERFORM</th>
+
+<%
+ /* while(rs1.next()){
+			String pro_pid = rs1.getString("pid");
+			String pro_title = rs1.getString("projecttitle");
+			String pro_language = rs1.getString("language");
+			String pro_frame = rs1.getString("framework");
+			String pro_cost = rs1.getString("cost");
+			String pro_duration = rs1.getString("duration");
+			String pro_type = rs1.getString("type");
+			String pro_desc = rs1.getString("descr");
+			String pro_adddet = rs1.getString("adddet");
+			String pro_email = rs1.getString("email");
+		
+
+out.println("<tr>");
+out.println("<td>"+pro_pid+"</td>");
+out.println("<td>"+pro_title+"</td>");
+out.println("<td>"+pro_language+"</td>");
+out.println("<td>"+pro_frame+"</td>");
+out.println("<td>"+pro_cost+"</td>");
+out.println("<td>"+pro_duration+"</td>");
+out.println("<td>"+pro_type+"</td>");
+out.println("<td>"+pro_desc+"</td>");
+out.println("<td>"+pro_adddet+"</td>");
+out.println("<td>"+pro_email+"</td>");*/
+out.println("<tr>");
+out.println("<td>"+pro_pid7+"</td>");
+out.println("<td>"+pro_title7+"</td>");
+out.println("<td>"+pro_language7+"</td>");
+out.println("<td>"+pro_frame7+"</td>");
+out.println("<td>"+pro_cost7+"</td>");
+out.println("<td>"+pro_duration7+"</td>");
+out.println("<td>"+pro_type7+"</td>");
+out.println("<td>"+pro_desc7+"</td>");
+out.println("<td>"+pro_adddet7+"</td>");
+out.println("<td>"+pro_email7+"</td>");
+out.println("<td>"+pro_dop7+"</td>");
+
+%>
+<td><a href="#" class="myButton">BID</a></td>
+<%
+out.println("</tr>");
+}%>
+
+	
+</table>
+        </div>
+<div id="contentprojectcmp">
+<p ><a href="post.jsp">[ PROJECTS COMPLETED ]</a><img src="data/close_client.png" alt="key" id="close_ID2"></p>
+<table>
+<th>UIDN</th>
+<th>ID</th>
+<th>TITLE</th>
+<th>LANGUAGE</th>
+<th>FRAMEWORK</th>
+<th>(COST&#8377)</th>
+<th>DURATION(month)</th>
+<th>TYPE</th>
+<th>DESCRIPTION</th>
+<th>ADDITIONAL</th>
+<th>EMAIL</th>
+<th>STATUS</th>
+<th>PSTATUS</th>
+<th>DOP</th>
+<th>DOBD</th>
+<th>DOA</th>
+<th>DOS</th>
+
+
+<%if(rs2.next())
+  while(rs2.next()){
+			String pro_pid6 = rs2.getString("pid");
+			String pro_title6 = rs2.getString("projecttitle");
+			String pro_language6 = rs2.getString("language");
+			String pro_frame6 = rs2.getString("framework");
+			String pro_cost6 = rs2.getString("cost");
+			String pro_duration6 = rs2.getString("duration");
+			String pro_type6 = rs2.getString("type");
+			String pro_desc6 = rs2.getString("descr");
+			String pro_adddet6 = rs2.getString("adddet");
+			String pro_email6 = rs2.getString("email");
+			String pro_status6 = rs2.getString("status");
+			String pro_prostatus6 = rs2.getString("prostatus");
+			String pro_dos6 = rs2.getString("dos");
+			String pro_uidn6 = rs2.getString("uidn");
+			String pro_dop6 = rs2.getString("dop");
+			String pro_dobd6 = rs2.getString("dobd");
+			String pro_doal6 = rs2.getString("doal");
+		
+
+out.println("<tr>");
+out.println("<td>"+pro_uidn6+"</td>");
+out.println("<td>"+pro_pid6+"</td>");
+out.println("<td>"+pro_title6+"</td>");
+out.println("<td>"+pro_language6+"</td>");
+out.println("<td>"+pro_frame6+"</td>");
+out.println("<td>"+pro_cost6+"</td>");
+out.println("<td>"+pro_duration6+"</td>");
+out.println("<td>"+pro_type6+"</td>");
+out.println("<td>"+pro_desc6+"</td>");
+out.println("<td>"+pro_adddet6+"</td>");
+out.println("<td>"+pro_email6+"</td>");
+out.println("<td>"+pro_status6+"</td>");
+out.println("<td>"+pro_prostatus6+"</td>");
+out.println("<td>"+pro_dop6+"</td>");
+out.println("<td>"+pro_dobd6+"</td>");
+out.println("<td>"+pro_doal6+"</td>");
+out.println("<td>"+pro_dos6+"</td>");
+out.println("</tr>");
+}
+else{
+
+out.println("<tr>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("</tr>");
+} %>
+
+	
+</table>
+</div>
+<div id="contentprojectundwork">
+<p >[ PROJECTS UNDER WORK ]<img src="data/close_client.png" alt="key" id="close_ID3"/></p>
+<table>
+<th>UIDN</th>
+<th>ID</th>
+<th>TITLE</th>
+<th>LANGUAGE</th>
+<th>FRAMEWORK</th>
+<th>(COST&#8377)</th>
+<th>DURATION(month)</th>
+<th>TYPE</th>
+<th>DESCRIPTION</th>
+<th>ADDITIONAL</th>
+<th>EMAIL</th>
+<th>STATUS</th>
+<th>PSTATUS</th>
+<th>DOP</th>
+<th>DOBD</th>
+<th>DOA</th>
+<th>DOS</th>
+
+
+<%if(rs3.next())
+  while(rs3.next()){
+			String pro_pid5 = rs3.getString("pid");
+			String pro_title5 = rs3.getString("projecttitle");
+			String pro_language5 = rs3.getString("language");
+			String pro_frame5 = rs3.getString("framework");
+			String pro_cost5 = rs3.getString("cost");
+			String pro_duration5 = rs3.getString("duration");
+			String pro_type5 = rs3.getString("type");
+			String pro_desc5 = rs3.getString("descr");
+			String pro_adddet5 = rs3.getString("adddet");
+			String pro_email5 = rs3.getString("email");
+			String pro_status5 = rs3.getString("status");
+			String pro_prostatus5 = rs3.getString("prostatus");
+			String pro_dos5 = rs3.getString("dos");
+			String pro_uidn5 = rs3.getString("uidn");
+			String pro_dop5 = rs3.getString("dop");
+			String pro_dobd5 = rs3.getString("dobd");
+			String pro_doal5 = rs3.getString("doal");
+		
+
+out.println("<tr>");
+out.println("<td>"+pro_uidn5+"</td>");
+out.println("<td>"+pro_pid5+"</td>");
+out.println("<td>"+pro_title5+"</td>");
+out.println("<td>"+pro_language5+"</td>");
+out.println("<td>"+pro_frame5+"</td>");
+out.println("<td>"+pro_cost5+"</td>");
+out.println("<td>"+pro_duration5+"</td>");
+out.println("<td>"+pro_type5+"</td>");
+out.println("<td>"+pro_desc5+"</td>");
+out.println("<td>"+pro_adddet5+"</td>");
+out.println("<td>"+pro_email5+"</td>");
+out.println("<td>"+pro_status5+"</td>");
+out.println("<td>"+pro_prostatus5+"</td>");
+out.println("<td>"+pro_dop5+"</td>");
+out.println("<td>"+pro_dobd5+"</td>");
+out.println("<td>"+pro_doal5+"</td>");
+out.println("<td>"+pro_dos5+"</td>");
+out.println("</tr>");
+}
+else{
+
+out.println("<tr>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("<td>NO DATA</td>");
+out.println("</tr>");
+}%>
+
+	
+</table>
+</div>
+<div id="contentprojectbidst">
+<p >[ PROJECT BID STATUS ]<img src="data/close_client.png" alt="key" id="close_ID4"/></p>
+<table>
+<th>UIDN</th>
+<th>ID</th>
+<th>TITLE</th>
+<th>LANGUAGE</th>
+<th>FRAMEWORK</th>
+<th>(COST&#8377)</th>
+<th>DURATION(month)</th>
+<th>TYPE</th>
+<th>DESCRIPTION</th>
+<th>ADDITIONAL</th>
+<th>EMAIL</th>
+<th>STATUS</th>
+<th>DOP</th>
+<th>DOBD</th>
+<%
+  while(rs4.next()){
+			String pro_pid4 = rs4.getString("pid");
+			String pro_title4 = rs4.getString("projecttitle");
+			String pro_language4 = rs4.getString("language");
+			String pro_frame4 = rs4.getString("framework");
+			String pro_cost4 = rs4.getString("cost");
+			String pro_duration4 = rs4.getString("duration");
+			String pro_type4 = rs4.getString("type");
+			String pro_desc4 = rs4.getString("descr");
+			String pro_adddet4 = rs4.getString("adddet");
+			String pro_email4 = rs4.getString("email");
+			String pro_status4 = rs4.getString("status");
+			String pro_uidn4 = rs4.getString("uidn");
+			String pro_dop4 = rs4.getString("dop");
+			String pro_dobd4 = rs4.getString("dobd");
+		
+
+out.println("<tr>");
+out.println("<td>"+pro_uidn4+"</td>");
+out.println("<td>"+pro_pid4+"</td>");
+out.println("<td>"+pro_title4+"</td>");
+out.println("<td>"+pro_language4+"</td>");
+out.println("<td>"+pro_frame4+"</td>");
+out.println("<td>"+pro_cost4+"</td>");
+out.println("<td>"+pro_duration4+"</td>");
+out.println("<td>"+pro_type4+"</td>");
+out.println("<td>"+pro_desc4+"</td>");
+out.println("<td>"+pro_adddet4+"</td>");
+out.println("<td>"+pro_email4+"</td>");
+out.println("<td>"+pro_status4+"</td>");
+out.println("<td>"+pro_dop4+"</td>");
+out.println("<td>"+pro_dobd4+"</td>");
+
+out.println("</tr>");
+}%>
+
+
+</table>
+</div>
+
+<div id="contenttopdev">
+<p >[ TOP DEVELOPER ]<img src="data/close_client.png" alt="key" id="close_ID6"/></p>
+<table>
+<th>UDIN</th>
+<th>NAME</th>
+<th>USERNAME</th>
+<th>PROJECT COMPLETED</th>
+<th>TOTAL PROJECT HELD</th>
+<th>FAILED PROJECTS</th>
+<th>TOTAL BID</th>
+<th>RANKING</th>
+<th>AVERAGE BID VALUE</th>
+<th>AVERAGE TIME RATIO</th>
+<th>DATE OF JOINING</th>
+ <%while(rs5.next()){
+			String dev_udin = rs5.getString("UDIN");
+			String dev_name = rs5.getString("NAME");
+			String dev_username = rs5.getString("USERNAME");
+			String dev_pro_cmp = rs5.getString("PROJECT COMPLETED");
+			String dev_pro_held = rs5.getString("TOTAL PROJECT HELD");
+			String dev_fai_pro = rs5.getString("FAILED PROJECTS");
+			String dev_tot_bid = rs5.getString("TOTAL BID");
+			String dev_rank = rs5.getString("RANKING");
+			String dev_b_val = rs5.getString("AVERAGE BID VALUE");
+			String dev_time = rs5.getString("AVERAGE TIME RATIO");
+			String dev_join = rs5.getString("DOJ");
+
+out.println("<tr>");
+out.println("<td>"+dev_udin+"</td>");
+out.println("<td>"+dev_name+"</td>");
+out.println("<td>"+dev_username+"</td>");
+out.println("<td>"+dev_pro_cmp+"</td>");
+out.println("<td>"+dev_pro_held+"</td>");
+out.println("<td>"+dev_fai_pro+"</td>");
+out.println("<td>"+dev_tot_bid+"</td>");
+out.println("<td>"+dev_rank+"</td>");
+out.println("<td>"+dev_b_val+"</td>");
+out.println("<td>"+dev_time+"</td>");
+out.println("<td>"+dev_join+"</td>");
+out.println("</tr>");
+}
+}
+	catch(SQLException sqe)
+	{
+		out.println(sqe);
+	}%>
+</table>
+</div>
+<div id="contentlearning">
+<p >[ LEARNING ]<img src="data/close_client.png" alt="key" id="close_ID7"/></p>
+
+</div>
+<div id="contenthelp">
+<p >[ HELP ]<img src="data/close_client.png" alt="key" id="close_ID8"/></p>
+</div>
+<div id="contentforum">
+<p >[ FORUM ]<img src="data/close_client.png" alt="key" id="close_ID9"/></p>
+</div>
+</div>
+</section>
+
+       	<h1 class="title-heading" style="color:#333333"> [PURPOSE OF VISIT] </h1>
+        <p class="work-text">HERE IS A LIST OF THE VARIOUS WORK DONE IN BOTH GRAPHIC AND WEBSITE DESIGN BY OUR DEVELOPERS CHOOSE ONE. 
+  </div>      
+</div>
+
+
+
+<div class="riga" style="padding:50px 0 0">
+    <div class="colonna col3" >
+    <a class="fancybox"  id="image2" title="POST NEW PROJECT"><img src="data/work1.png" alt="Web template"></a>
+    </div>
+
+
+    <div class="colonna col3" >
+    <a class="fancybox"  id="image2" title="VIEW PREVIOUS POSTED PROJECTS"><img src="data/work3.png" alt="Logo fantasy"></a>
+    </div>
+
+    <div class="colonna col3" >
+    <a class="fancybox"  id="image2" title="VIEW PROJECT STATUS"><img src="data/work2.png" alt="Web template"></a>
+    </div>
+</div>
+
+<div class="riga">
+    <div class="colonna col3" >
+    <a class="fancybox"  id="image2" title="DELETE A PROJECT"><img src="data/work4.png" alt="Logo fantasy"></a>
+    </div>
+
+
+    <div class="colonna col3" >
+    <a class="fancybox"  id="image2" title="MODIFY A PROJECT"><img src="data/work5.png" alt="Logo Bar Nazionale"></a>
+    </div>
+
+    <div class="colonna col3" >
+      <a class="fancybox"  id="image2" title="VIEW TOP DEVELOPERS"><img src="data/work6.png" alt="Mastarna disco pub"></a>
+    </div>
+</div>
+
+    
+<div class="riga">
+       <div class="colonna col1">
+         <div class="page-scroll"><a href="#contact" class="button-work">REQUEST A QUOTE</a></div>
+       </div>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="about"><!-- ABOUT--><div class="contenitore">
+
+	<div class="riga"><div class="colonna col1">
+       	<h1 class="title-heading" style="color:#333333" > [ ABOUT US] </h1>
+       	<!--Admin photos-->
+       	
+       	<!--end admin photos-->
+        <p class="work-text"></>HI, I'M GAURAV PATHAK . I'M CURRENTLY PERSUING
+        	MY ENGINEERING IN IT FROM IMS ENGINEERING COLLEGE GHAZIABAD INDIA.
+I LIKE TO MAKE WEBSITES SIMPLE.THIS IS A MINIPROJECT UNDER SUPERVISION OF <B>MR. UPDESH KUMAR JAISWAL PROFESSOR IN IT DEPT. </B> FASCINATED BY THE WORLD OF THE WEB AND ALL ITS FACETS ,
+UNDERTAKE THE ROAD FREELANCE WORKER . WHAT BETTER
+TO PUT INTO PRACTICE THE CREATIVITY AND IMAGINATION THAT BELONGS TO ME . MY
+MISSION ? CREATE PROFESSIONAL RELATIONSHIPS WITH BOTH PUBLIC AND PRIVATE WITH
+WHO SEEK THE WEB A NEW WAY TO EXPAND THEIR BUSINESS .</p>
+        
+	</div></div>
+    
+</div></section><!-- END ABOUT-->
+<section id="services"><!--  ABOUT--><div class="contenitore">
+
+	<div class="riga"><div class="colonna col1">
+       	<h1 class="title-heading" style="color:#333333"> [ SERVICES ] </h1>
+        <p class="work-text">WE OFFER SERVICES RANGING FROM GRAPHIC DESIGN TO THE TRADITIONAL WEBSITE CREATION.</p>
+        
+	</div></div>
+    
+    <div class="riga" style="text-align:center; padding:50px 0">
+    <div class="colonna col4">
+    <img src="data/comunicazione-01.png" alt="Comunicazione"><h2 class="services-heading"> Communication </h2>
+    <p class="services-text">Creating logos for individuals or businesses ,
+study and realization corporate identity, business cards ,
+folders , brochures, booklets.</p>
+    </div>
+    
+    <div class="colonna col4">
+    <img src="data/graphic-01.png" alt="Grafica"><h2 class="services-heading"> advertising graphics</h2>
+    <p class="services-text">Ideation advertising campaigns .
+Realization brochure , flyer , magazine layout , illustrations ,
+books, calendars , posters , posters.</p>
+    </div>
+    
+    <div class="colonna col4">
+    <img src="data/web-01.png" alt="Web design"><h2 class="services-heading"> websites </h2>
+    <p class="services-text">Realization professional websites with responsive layout for easy reading and browsing on tablets and smartphones.</p>
+    </div>
+    
+    <div class="colonna col4">
+    <img src="data/social-01.png" alt="Social Network"><h2 class="services-heading"> Social network </h2>
+    <p class="services-text">Realization "Fan Page " and Facebook and growth of your network with Twitter , Google+ and popular Social Networking.
+    </div>
+    </div>
+    
+    
+</div></section><!-- FINE ABOUT-->
+
+
+
+
+
+
+
+
+
+
+<footer id="contact"><div class="contenitore">
+
+<div class="colonna col1">
+    <h1 class="title-heading" style="color:#F2F2F2"> [ We get in touch ] </h1>
+    <p class="work-text">Create a relationship of respect and respect is
+at the base of any profession . For this would be a pleasure to
+in your network of contacts or to receive your call for an
+advice, information or perhaps a quote. </p>
+    
+
+
+<div class="riga contact-icon" style="text-align:center;">
+    <div class="colonna col4">
+        <img src="data/geo-01.png">
+        <p class="contat-text">You can find me in <br>IMS ENGINEERING COLLEGE</p>
+        
+    </div>
+    <div class="colonna col4">
+        <img src="data/phone-01.png">
+        <p class="contat-text">We catch<br>+919716838452</p>
+        
+    </div>
+    <div class="colonna col4">
+        <img src="data/cuore-01.png">
+        <p class="contat-text">Follow me on <a href="http://www.facebook.com/osw">Facebook</a></p>
+        
+    </div>
+    <div class="colonna col4">
+        <img src="data/social2-01.png">
+        <p class="contat-text">Mail Us<br><a href="mailto:gauravp361@gmail.com">gauravp361@gmail.com</a></p>
+        
+    </div>
+</div>
+
+
+    
+    <div class="footer-social">
+        <li><a href="http://www.facebook.com/"><img src="data/facebook.png"></a></li>
+        <li><a href="mailto:gauravp361@gmail.com"><img src="data/mail.png"></a></li>
+        <li><a href="http://instagram.com/osw"><img src="data/instagram.png"></a></li>
+    </div>  
+    
+    
+ 	<p class="copyright"> © Copyright ORE SOFTWARE WORKSTATION 2015 - IMS ENGINEERING COLLEGE  |  <a href="credits.html">Credits</a></p> 
+    <p> <a href="" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "http://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script></p>
+    
+    
+</div> 
+
+</div></footer> 
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40643745-2', '');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>
